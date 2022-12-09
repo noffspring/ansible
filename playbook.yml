@@ -1,0 +1,11 @@
+---
+- name: playbook playbook
+  hosts: 
+    - ubuntu
+  gather_facts: yes
+
+  tasks:
+    - name: Testing shell
+      shell: echo test
+      tags:
+        - shell
