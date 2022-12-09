@@ -1,11 +1,9 @@
 ---
-- name: playbook playbook
-  hosts: 
-    - ng_machine
+- name: playbook
+  hosts:
+    - ng_machine 
   gather_facts: yes
 
-  tasks:
-    - name: Testing shell
-      shell: echo test
-      tags:
-        - shell
+  roles:
+    - test
+

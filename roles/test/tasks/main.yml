@@ -1,0 +1,5 @@
+---
+- name: Testing shell
+  shell: echo test
+  tags:
+    - shell
